@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<h1>Welcome, <span th:text="${user.email}">User</span>!</h1>
+<p>Your phone number is: <span th:text="${user.phone}">Phone</span></p>
+<!-- Add more user details here as needed -->
+<a href="/logout">Logout</a>
+<a href="/change-password">Change password</a>
+</body>
+</html>
